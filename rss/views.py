@@ -12,8 +12,8 @@ def search_url(request):
     
     new_url_feedparse = feedparser.parse(u)
     new_url_entries = new_url_feedparse.entries
-    new_url = NewsFeed(url_input = new_url_entries)
-    new_url.save()
+    #new_url = NewsFeed(url_input = new_url_entries)
+    #new_url.save()
     print(new_url_entries)
 
     context = {
